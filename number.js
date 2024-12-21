@@ -29,3 +29,14 @@ console.log("Math.min --> " + Math.min(1, 2, 3, 5, 6, 7));
 
 // Math.pow(target,mũ)
 console.log("Math.pow --> " + Math.pow(3, 2)); // 3: target, 2: số mũ
+
+// isNaN(value) và Number.isNaN(value)
+// NaN --> not a number
+
+// isNaN sẽ parse thành number trước khi check
+console.log(isNaN("this is a string")); // true
+console.log(isNaN("12.12")); // false
+
+// Number.isNaN muốn true thì phải truyền vào NaN và có kiểu dữ liệu là Number
+console.log(Number.isNaN("this is a string")); // false
+console.log(Number.isNaN(NaN));
