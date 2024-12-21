@@ -29,3 +29,8 @@ console.log(title.charAt(title.length - 1));
 const title2 = "Java Web Developer";
 console.log(title2.substr(1, 6)); // 1: index from, 6: số ký tự muốn lấy
 console.log(title2.substring(1, 6)); // [1,6) --> 1,2,3,4,5
+
+const title3 = "  I am a Dev0 Java Web Developer of FPT Software ";
+// loại bỏ space 2 bên, đưa về in hoa hết, thay Dev0 thành Dev1, repeat 2 lần
+console.log("result of title3: ");
+console.log(title3.trim().toUpperCase().replace("DEV0", "DEV1").repeat(2));
