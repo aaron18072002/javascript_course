@@ -13,3 +13,6 @@ console.log(otherNumber);
 // hoisting
 console.log(anotherNumber);
 const anotherNumber = 120;
+
+console.log(hoistingNumber);
+var hoistingNumber = 120;
