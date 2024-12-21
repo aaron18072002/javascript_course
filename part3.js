@@ -32,3 +32,13 @@ console.log("false --> " + Boolean(false));
 console.log("Dev0 Fpt --> " + Boolean("Dev0 Fpt"));
 
 // Type coercion - Ép kiểu
+// + - * /
+console.log("=================TYPE COERCION==================");
+console.log("1 + 2 --> " + (1 + 2));
+console.log("10 + 10 --> " + (10 + 10));
+console.log('10 + "10" --> ' + (10 + "10"));
+console.log('"10" + 10 --> ' + ("10" + 10));
+console.log('null + "" --> ' + (null + ""));
+console.log("null + undefined --> " + (null + undefined));
+console.log('"" - 1 --> ' + ("" - 1)); // Number("") - 1 = 0 - 1 = -1
+console.log("false - true --> " + (false - true)); // Number(false) - Number(true) = 0 - 1
