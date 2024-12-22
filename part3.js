@@ -38,7 +38,32 @@ console.log("1 + 2 --> " + (1 + 2));
 console.log("10 + 10 --> " + (10 + 10));
 console.log('10 + "10" --> ' + (10 + "10"));
 console.log('"10" + 10 --> ' + ("10" + 10));
-console.log('null + "" --> ' + (null + ""));
-console.log("null + undefined --> " + (null + undefined));
+console.log('null + "" --> ' + (null + "")); // null
+console.log("null + undefined --> " + (null + undefined)); // NaN
 console.log('"" - 1 --> ' + ("" - 1)); // Number("") - 1 = 0 - 1 = -1
 console.log("false - true --> " + (false - true)); // Number(false) - Number(true) = 0 - 1
+
+// Toán tử so sánh > < >= <=
+console.log("5 > 7 --> " + (5 > 7));
+console.log("50 > 7 --> " + (50 > 7));
+console.log("50 < 7 --> " + (50 < 7));
+console.log("6 >= 6 --> " + (6 >= 6));
+console.log("60 <= 6 --> " + (6 <= 6));
+
+// Toán tử logic: && || !
+console.log("5 > 7 && 8 > 3 --> " + (5 > 7 && 8 > 3)); // false
+console.log("5 > 7 || 8 > 3 --> " + (5 > 7 || 8 > 3)); // false
+const amIWrong = false;
+console.log("!false --> " + !amIWrong);
+
+// #Boolean &&
+// false && true --> false
+// false && false --> false
+// true && false --> false
+// true && true --> true
+
+// #Boolean ||
+// false || true --> true
+// true || false --> true
+// true || true --> true
+// fasle || false --> false
