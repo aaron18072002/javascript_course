@@ -47,3 +47,60 @@ logName();
 })();
 
 // Function decleration
+
+// SCOPE
+// Global scope và Function Scope
+let myName = "Nemo Nguyen"; // global scope
+function logYourName() {
+  let myName2 = "Anh"; // function scope
+  console.log(myName2);
+}
+logYourName();
+
+// block scope
+if (true) {
+  let message = "Helo Nemo";
+  alert(message);
+  var message2 = "Hello Thanh Anh"; // global scope và hoisting
+  alert(message2);
+}
+
+// lexical scope
+let aNewName = "Nemo"; // global scope
+function sayHello() {
+  let message = "Hi"; // block scope
+  console.log(message + " " + aNewName);
+}
+sayHello();
+
+// CLOSURE
+// parent function
+// function sayHello2() {
+//   let message = "Hi";
+//   // inner funciton
+//   function sayHi() {
+//     console.log(message);
+//   }
+//   return sayHi;
+// }
+
+// let hello = sayHello();
+// hello();
+
+function sayHello3(message) {
+  return function hiYourName(name) {
+    console.log(message + " " + name);
+  };
+}
+let hello = sayHello3("Hello");
+hello("Nemo");
+
+function anotherFunction() {
+  let otherMessage = "hello";
+  function sayHi() {
+    console.log(otherMessage);
+  }
+  return sayHi;
+}
+let callFunc = anotherFunction(); // ko truy cập đc biến otherMessage nữa
+callFunc(); // nhưng với closure thì dòng này vẫn return hello được
