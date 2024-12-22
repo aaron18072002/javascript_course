@@ -67,3 +67,16 @@ console.log("!false --> " + !amIWrong);
 // true || false --> true
 // true || true --> true
 // fasle || false --> false
+
+// TOÁN TỬ == loose equality và === strict equality
+console.log("============ == và === =============");
+console.log("10 == 10 --> " + 10 == 10);
+console.log('10 == "10" --> ' + (10 == "10")); // String(10) == "10" --> true
+console.log("true == 1 --> " + true == 1); // Number(true) == 1 --> true
+console.log('1 == "01 --> ' + (1 == "01")); // 1 == Number("01") --> 1 == 01 --> true
+console.log('null == "" --> ' + null == ""); // String(null) == "" --> "null" == "" --> false
+console.log(typeof 10);
+console.log(typeof "10");
+console.log('10 === "10" --> ' + 10 === "10"); // false
+console.log('10 !== "10" --> ' + 10 !== "10"); // true
+console.log('true == "true" --> ' + (true == "true")); // false
