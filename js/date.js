@@ -85,7 +85,7 @@ console.log(now.toLocaleDateString()); // MM/dd/yyyy -> 2/12/2025
 console.log(now.toLocaleDateString("vi-VI")); // 12/2/2025
 console.log(now.toISOString()); // 2025-02-12T08:58:23.108Z
 
-const myTime = new Date("Fri Jan 01 2021 23:23:23 GMT+0700 (Indochina Time)"); // 1/1/2021
+const myTime = new Date("Fri Jan 13 2021 23:23:23 GMT+0700 (Indochina Time)"); // 1/1/2021
 const myYear = myTime.getFullYear(); // 2021
 const myMonth = myTime.getMonth(); // 0
 const myDate = myTime.getDate(); // 1
@@ -94,3 +94,13 @@ console.log(myMonth);
 console.log(myDate);
 const prefixMonth = myMonth < 10 ? "0" : "";
 console.log(`${myDate}/${prefixMonth}${myMonth}/${myYear}`);
+
+// setTimeut vs setInterval
+setTimeout(() => {
+  alert("call me after 3 secconds");
+}, 3000);
+
+const timer = setInterval(() => {
+  console.log("call me");
+}, 1000);
+clearInterval(timer);
