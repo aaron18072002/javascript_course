@@ -33,9 +33,28 @@ console.log("reversed arr --> " + students1.reverse());
 // join -> nối các phần tử trong mảng với 1 chuỗi --> trả về 1 array mới
 console.log("join --> " + students1.join("123"));
 
-students1 = ["evondev", "tuan", "nam", "thanh", "trung"];
+students1 = ["evondev", "tuan", "nam", "thanh", "trung", "tuan"];
 // includes --> kiểm tra mảng đó có chứa phần tử nào đó ko
 console.log("test include evondev --> " + students1.includes("evondev"));
 console.log("test include a1 --> " + students1.includes("a1"));
 
-// indexOf --> trả về vị trí của 1 phần tử trong mảng
+// indexOf --> trả về vị trí của phần tử đầu tiên khớp với String truyền vào
+console.log(students1.indexOf("tuan"));
+// indexOf --> trả về vị trí của phần tử cuối cùng khớp với String truyền vào
+console.log(students1.lastIndexOf("tuan"));
+
+// push --> thêm phần tử vào cuối mảng --> modify mảng gốc
+students1.push("javascript");
+console.log(students1);
+
+// unshift --> thêm phần tử vào đầu mảng --> modify mảng gốc
+students1.unshift("frontend");
+console.log(students1);
+
+// pop --> xóa phần tử cuối cùng trong mảng --> modify mảng gốc
+students1.pop();
+console.log(students1);
+
+// shift --> xóa phần tử đầu tiên trong mảng --> modify mảng gốc
+students1.shift();
+console.log(students1);
