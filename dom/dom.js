@@ -31,3 +31,18 @@ multiNodes.forEach((node) => {
 //                          nếu ko có thì trả về empty
 const classNodes = document.getElementsByClassName("item");
 console.log(classNodes);
+
+// 2.4 document.getElementByTagName("tagName") --> trả về 1 HTMLCollection chứa danh sách các nodes,
+//                          nếu ko có thì trả về empty
+const tagNodes = document.getElementsByTagName("h1");
+console.log(tagNodes);
+
+// 2.5 document.getElementById("idName") --> trả về 1 Node, ko có thì trả về null
+const idNode = document.getElementById("spinners");
+console.log(idNode);
+
+const idNode2 = document.querySelector("#spinner");
+console.log(idNode2);
+
+// hay dùng nhất document.querySelector(tag,id,class)
+// và document.querySelectorAll(tag,id,class)
