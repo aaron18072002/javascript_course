@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      .container {
+        font-size: 20px;
+        font-family: sans-serif;
+      }
+
+      .container.is-active {
+        color: #07a787;
+      }
+    </style>
   </head>
   <body>
     <!-- <script type="text/javascript">
@@ -18,8 +28,9 @@
     </div>
     <p id="spinner" style="color: red">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad est iste quod
-      temporibus nesciunt, in illo sapiente cum nisi quas, sit expedita? Labore
-      cumque accusantium quidem repudiandae tempore quod placeat.
+      temporibus nesciunt, <strong style="display: none">hello world</strong> in
+      illo sapiente cum nisi quas, sit expedita? Labore cumque accusantium
+      quidem repudiandae tempore quod placeat.
     </p>
     <ul>
       <li class="item item1">item1</li>
@@ -36,6 +47,6 @@
     <a href="https://evondev.com" target="" class="link">evondev</a>
     <a href="https://evondev.com" target="" class="link">evondev</a>
 
-    <script src="./dom/text.js"></script>
+    <script src="./dom/class.js"></script>
   </body>
 </html>
