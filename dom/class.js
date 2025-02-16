@@ -19,3 +19,7 @@ console.log(title);
 console.log(title.className);
 title.className = "title";
 console.log(title.className);
+
+// menu toggle class
+const menu = document.querySelector(".menu");
+menu.classList.add("is-show");

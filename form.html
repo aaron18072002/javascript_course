@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>Text input fields</h2>
+
+    <form id="form">
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" value="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" value="lname" />
+      <button class="btn-submit" type="submit">Submit</button>
+    </form>
+
+    <p>Note that the form itself is not visible.</p>
+    <p>
+      Also note that the default width of text input fields is 20 characters.
+    </p>
+
+    <!-- Thêm jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".btn-submit").on("click", function (e) {
+          e.preventDefault();
+
+          var fname = $("#fname").val();
+          var lname = $("#lname").val();
+
+          console.log(`first name: ${fname}, last name: ${lname}`);
+        });
+      });
+    </script>
+  </body>
+</html>
